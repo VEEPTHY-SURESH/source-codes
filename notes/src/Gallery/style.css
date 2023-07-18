@@ -1,0 +1,144 @@
+/* .todo-list{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* input */
+
+.search{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    border: none;
+    outline: none;
+    margin: 0 .5rem;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+/* buttons */
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 2rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  margin: 5px;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+
+.button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+.Btn {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(to right,#3b3528,#111111,#0f0f0f,#0c0c0c,#1a1a1a,#131313);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  font-size: 1rem;
+  margin: 20px 10px;
+}
+
+.Btn::before {
+  position: absolute;
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
+
+  /*card*/
+  .card{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    background: #000000;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+  .card p{
+    margin: 1rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: aqua;
+  }
+  h3{
+    color: gold;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  
+
+  
+  
